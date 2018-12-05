@@ -34,7 +34,7 @@ public class StartupDataInit {
             this.collegueRepo.save(new Collegue("pervers34","https://media1.giphy.com/media/Ja8ihKn1B3sA/200w.gif?cid=3640f6095c05262b494e73684d6320e6",  -999));
             this.collegueRepo.save(new Collegue("doggystyle","https://media2.giphy.com/media/d3Fym9OQ08o6agYE/200w.gif?cid=3640f6095c0527bb644d4579735f5cdf",  -100));
             this.collegueRepo.save(new Collegue("pupute","https://media1.giphy.com/media/xe9csf50g4SqY/200.gif?cid=3640f6095c052ae5315077353248ff7b",  0));
-            this.collegueRepo.save(new Collegue("travelotte4ever","https://media1.giphy.com/media/S1FcQ3fJMz81q/200w.gif?cid=3640f6095c05278d2e6f36654d8fb03e",  -100));
+            this.collegueRepo.save(new Collegue("teen","https://media3.giphy.com/media/3ohjV9GMdGFsuWvPMI/200w.gif?cid=3640f6095c07c3e36153667155f16662",  -100));
             this.collegueRepo.save(new Collegue("bisounours","https://media1.giphy.com/media/laLCSA7UdHs1q/200w.gif?cid=3640f6095c05287a2e346344778dec5d",  -100));
             this.collegueRepo.save(new Collegue( "cathy","https://media0.giphy.com/media/I5R2abTxgU62c/200.gif?cid=3640f6095c0528bd573258356711d8ec", -100));
             this.collegueRepo.save(new Collegue("funnyface","https://media1.giphy.com/media/110gqI69qjVAkM/200w.gif?cid=3640f6095c0528564131394b32109805",  -100));
