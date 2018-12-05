@@ -27,6 +27,11 @@ public class CollegueCtrl {
 		return this.collegueRepo.findAll();
 	}
 
+	@GetMapping("/{pseudo}")
+	public Collegue find(@PathVariable String pseudo) {
+		return this.collegueRepo.findByPseudo(pseudo);
+	}
+
 	@PatchMapping("/{pseudo}")
 	public Collegue patch(@PathVariable String pseudo, @RequestBody Map<String, String> vote) {
 		final Collegue collegue = collegueRepo.findByPseudo(pseudo);

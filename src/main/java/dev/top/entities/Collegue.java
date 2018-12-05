@@ -9,17 +9,29 @@ public class Collegue {
 	@Id
 	@GeneratedValue
 	private int id;
+	private String nom;
+	private String prenom;
 	private String pseudo;
-	private String photo;
+	private String email;
+	private String adresse;
 	private int score;
+	private String photo;
 
 	public Collegue() {
 	}
 
 	public Collegue(String pseudo, String photo, int score) {
+		this("Nom", "Prénom", pseudo, "m@il", "adresse", score, photo);
+	}
+
+	public Collegue(String nom, String prenom, String pseudo, String email, String adresse, int score, String photo) {
+		this.nom = nom;
+		this.prenom = prenom;
 		this.pseudo = pseudo;
-		this.photo = photo;
+		this.email = email;
+		this.adresse = adresse;
 		this.score = score;
+		this.photo = photo;
 	}
 
 	public int getId() {
@@ -52,5 +64,37 @@ public class Collegue {
 
 	public void setScore(int score) {
 		this.score = score;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getPrenom() {
+		return prenom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getAdresse() {
+		return adresse;
+	}
+
+	public void setAdresse(String adresse) {
+		this.adresse = adresse;
 	}
 }
