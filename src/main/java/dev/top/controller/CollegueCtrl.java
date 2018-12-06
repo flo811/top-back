@@ -51,7 +51,7 @@ public class CollegueCtrl {
 		Collegue[] collegue = rt.getForObject("http://collegues-api.cleverapps.io/collegues?matricule=" + infos.get("matricule"), Collegue[].class);
 
 		if (collegue.length > 0) {
-			String photo = infos.get("photo").equals("") ? collegue[0].getPhoto() : infos.get("photo");
+			String photo = infos.size()!=3 ? collegue[0].getPhoto() : infos.get("photo");
 			collegueRepo.save(new Collegue(collegue[0].getNom(), collegue[0].getPrenom(), infos.get("pseudo"),
 					collegue[0].getEmail(), collegue[0].getAdresse(), 0, photo));
 			return ResponseEntity.ok().build();
